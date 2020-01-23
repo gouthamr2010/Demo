@@ -1,0 +1,19 @@
+<mvc:View controllerName="com.sap.Demo.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" showHeader="false">
+					<content>
+						<core:Fragment id="form1" fragmentName="com.sap.Demo.fragment.Form" type="XML"/>
+						<core:Fragment id="form2" fragmentName="com.sap.Demo.fragment.Form" type="XML"/>
+						<HBox justifyContent="Center">
+							<Button text="Click Me" press=".onClick"></Button>
+						</HBox>
+						<Panel id="panel"></Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

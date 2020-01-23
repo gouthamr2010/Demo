@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<f:SimpleForm id="simpleForm" editable="true" layout="ResponsiveGridLayout" title="{formData>title}" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+		labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+		singleContainerFullSize="false">
+		<f:content>
+			<Label text="Name"/>
+			<Input id="name" value="{formData>SupplierName}"/>
+			<Label text="Street/No."/>
+			<Input value="{formData>Street}"></Input>
+		</f:content>
+	</f:SimpleForm>
+</core:FragmentDefinition>
